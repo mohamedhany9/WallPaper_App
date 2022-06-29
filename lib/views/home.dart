@@ -52,6 +52,18 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         title: brandName(),
         elevation: 0.0,
+        centerTitle: true,
+        actions: [
+          IconButton(
+            icon: Icon(
+              Icons.favorite,
+              color: Colors.white,
+            ),
+            onPressed: () {
+              // do something
+            },
+          )
+        ],
       ),
       body: SingleChildScrollView(
         child: Container(
